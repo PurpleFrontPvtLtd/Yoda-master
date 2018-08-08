@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/communications_staff_home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            </LinearLayout>
+
+        <TextView
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/view_all_group"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:id="@+id/communication_staff_view_all_group"
+                android:layout_margin="4dp"
+                android:background="@drawable/layout_click_pink">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/TextviewStyle_space_MediumBig_white"
+                    android:text="@string/view_all_group"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:visibility="invisible"
+                android:background="@drawable/layout_click_pink"
+                android:layout_margin="4dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:visibility="invisible"
+                android:background="@drawable/layout_click"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/parent_messages"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:id="@+id/communication_staff_parent_message"
+                android:layout_margin="4dp"
+                android:background="@drawable/layout_click_orange">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/TextviewStyle_space_MediumBig_white"
+                    android:text="@string/messages"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:id="@+id/communication_staff_send"
+                android:background="@drawable/layout_click_pink"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    style="@style/TextviewStyle_space_MediumBig_white"
+                    android:text="@string/send_new_message"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:visibility="invisible"
+                android:background="@drawable/layout_click"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

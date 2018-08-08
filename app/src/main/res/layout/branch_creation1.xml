@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/create_scroll_view_padding"
+    android:background="@color/md_white_1000"
+            android:paddingStart="@dimen/create_scroll_view_padding"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
+                    android:paddingEnd="@dimen/table_row_default_padding_side"
+                    android:paddingRight="@dimen/table_row_default_padding_side"
+                    android:onClick="clickBranch"
+                    android:id="@+id/branlay"
+                    android:paddingTop="22dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_account_circle_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/branch_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:hint="@string/branch_creation_branch_name_hint"
+
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
+                    android:paddingEnd="@dimen/table_row_default_padding_side"
+                    android:paddingRight="@dimen/table_row_default_padding_side"
+                    android:paddingTop="22dp"
+                    android:onClick="clickAdd"
+                    android:id="@+id/addlay"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_assignment_late_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/branch_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/address"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
+                    android:paddingEnd="@dimen/table_row_default_padding_side"
+                    android:paddingRight="@dimen/table_row_default_padding_side"
+                    android:paddingTop="22dp"
+                    android:onClick="clickMail"
+                    android:id="@+id/emaillay"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_email_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/branch_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/email"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
+                    android:paddingEnd="@dimen/table_row_default_padding_side"
+                    android:paddingRight="@dimen/table_row_default_padding_side"
+                    android:onClick="clickPh"
+                    android:id="@+id/phonelay"
+                    android:paddingTop="22dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_perm_phone_msg_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/branch_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/phone"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
+                    android:paddingEnd="@dimen/table_row_default_padding_side"
+                    android:paddingRight="@dimen/table_row_default_padding_side"
+                    android:onClick="clickFb"
+                    android:id="@+id/fblay"
+                    android:paddingTop="22dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_assignment_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/branch_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/facebook"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
+                    android:paddingEnd="@dimen/table_row_default_padding_side"
+                    android:paddingRight="@dimen/table_row_default_padding_side"
+                    android:onClick="clickWebsite"
+                    android:id="@+id/websitelay"
+                    android:paddingTop="22dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_assignment_late_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/branch_website"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/website"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/table_row_default_horizontal_padding"
+                    android:paddingEnd="@dimen/table_row_default_padding_side"
+                    android:paddingRight="@dimen/table_row_default_padding_side"
+                    android:onClick="clickTiming"
+                    android:id="@+id/timelay"
+                    android:paddingTop="22dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_timer_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/branch_timing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/timing"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="@dimen/image_margin_side"
+                    android:text="@string/branch_creation_type_chech"
+                    android:background="@android:color/transparent"
+
+                    android:textColorHighlight="@color/accentLight"
+                    android:textColorHint="@color/textLightGray"          android:textSize="16sp"
+                    android:id="@+id/branch_checkbok"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/image_margin_side"
+                    android:layout_marginStart="@dimen/image_margin_side"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/branch_head"
+                    android:id="@+id/textView27" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/layout_border1"
+                    android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:spinnerMode="dialog"
+
+                    android:id="@+id/spinner" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:background="@color/blue"
+                    android:textColor="@color/md_white_1000"
+                    android:id="@+id/branch_submit"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>

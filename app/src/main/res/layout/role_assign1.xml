@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/scrollview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:text="Staff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#696e79"
+            style="@style/TextviewStyle_space_dark_blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:id="@+id/customer_layout"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/role_assign_staff"
+                android:entries="@array/planets_array"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:id="@+id/textView3"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/customer_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/TextviewStyle_space_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/role_assign_role"
+                android:spinnerMode="dialog"
+                android:entries="@array/planets_array"
+
+                android:layout_marginRight="10dp"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:id="@+id/tv_branch"
+            android:visibility="visible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            style="@style/TextviewStyle_space_blue"
+            android:layout_below="@+id/customer_company_list"
+            android:layout_marginLeft="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/sp_select_branch"
+
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/role_assign_branch"
+                android:spinnerMode="dialog"
+                android:entries="@array/planets_array"
+
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grade"
+            android:id="@+id/tv_grade"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/customer_company_list"
+            style="@style/TextviewStyle_space_blue"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/sp_select_grade"
+
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/role_assign_grade"
+                android:spinnerMode="dialog"
+                android:entries="@array/planets_array"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            android:id="@+id/tv_section"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/customer_company_list"
+            style="@style/TextviewStyle_space_blue"
+            android:layout_marginLeft="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_marginRight="20dp"
+            android:id="@+id/sp_select_section"
+
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/role_assign_section"
+                android:spinnerMode="dialog"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:visibility="visible"
+                android:entries="@array/planets_array"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:id="@+id/tv_subject"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/customer_company_list"
+            style="@style/TextviewStyle_space_blue"
+            android:layout_marginLeft="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/sp_select_subject"
+
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/role_assign_subject"
+                android:spinnerMode="dialog"
+                android:entries="@array/planets_array"
+
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:visibility="visible"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/md_white_1000"
+            android:id="@+id/role_assign_submit"
+            android:background="@color/blue"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+
+
+</ScrollView>

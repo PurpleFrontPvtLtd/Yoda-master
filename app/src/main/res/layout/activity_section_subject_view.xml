@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" style="@style/layout2" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/layout"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_gravity="center"
+            android:text="@string/create_section"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space"
+            android:visibility="gone"
+            android:text="@string/grade"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SimpleTextviewStyle"
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/section_creation_grade"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space"
+            android:visibility="gone"
+            android:text="@string/section_name" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:hint="@string/subject_name"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:id="@+id/section_creation_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head_teacher"
+            android:layout_marginTop="20dp"
+            style="@style/TextviewStyle_space_blue"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:spinnerMode="dialog"
+                android:id="@+id/section_staff_spinner"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            style="@style/Button_style2"
+            android:background="@color/blue"
+            android:textColor="@color/md_white_1000"
+            android:id="@+id/section_creation_submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/submit"/>
+    </LinearLayout>
+</ScrollView>

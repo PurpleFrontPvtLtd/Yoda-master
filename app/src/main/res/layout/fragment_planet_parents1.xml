@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:text="@string/parents_your_child2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/md_white_1000"
+            android:id="@+id/fragment_planet_parent_layout">
+            <ListView
+                android:layout_width="match_parent"
+                android:divider="@color/md_green_500"
+                android:dividerHeight="1dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+

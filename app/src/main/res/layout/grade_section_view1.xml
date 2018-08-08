@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/section_name"
+            android:id="@+id/grade_section_heading_name"
+            style="@style/TextviewStyle_space_MediumBig"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextviewStyle_space"
+                android:text="@string/section_head2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                style="@style/SimpleTextviewStyle_space"
+                android:id="@+id/grade_section_head"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextviewStyle_space"
+                android:text="@string/grade2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                style="@style/SimpleTextviewStyle_space"
+                android:id="@+id/grade_section_name"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextviewStyle_space"
+                android:text="@string/branch2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                style="@style/SimpleTextviewStyle_space"
+                android:id="@+id/grade_branch_name"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:text="@string/subject_section"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/grade_subject_layout"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/black_dot"
+                style="@style/SimpleTextviewStyle"
+                android:padding="0dp"
+                android:id="@+id/grade_section_view_add_subject"
+                android:text="@string/add_subject" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:text="@string/student_section"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/grade_student_layout"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:text="@string/action"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/black_dot"
+            style="@style/SimpleTextviewStyle"
+            android:visibility="gone"
+            android:text="@string/change_head_teacher"
+            android:id="@+id/grade_section_headteacher_change"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SimpleTextviewStyle"
+            android:drawableLeft="@drawable/black_dot"
+            android:text="@string/student_section_add"
+            android:id="@+id/grade_section_student_add"/>
+    </LinearLayout>
+
+</ScrollView>

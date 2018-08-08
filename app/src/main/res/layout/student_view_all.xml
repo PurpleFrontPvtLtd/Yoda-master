@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Students" />
+
+
+        <LinearLayout
+            android:id="@+id/students_view_all_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space"
+            android:padding="0dp"
+            android:drawableLeft="@drawable/black_dot"
+            android:text="@string/action"/>
+
+        <TextView
+            android:id="@+id/student_view_all_add_new"
+            style="@style/SimpleTextviewStyle"
+            android:drawableLeft="@drawable/black_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new Student" />
+
+    </LinearLayout>
+
+</ScrollView>

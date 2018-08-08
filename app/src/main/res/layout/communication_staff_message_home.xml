@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextviewStyle_space_Big"
+            android:visibility="gone"
+        android:text="@string/message_for"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/communication_staff_message_home_layout"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/communication_staff_message_home_layout_read"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:id="@+id/listview"
+        android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+

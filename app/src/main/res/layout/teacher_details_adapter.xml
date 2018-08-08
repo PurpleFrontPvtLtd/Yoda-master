@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete_role"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/INSIDE"
+                android:layout_toEndOf="@+id/INSIDE"
+                android:layout_marginRight="5dp"
+                android:tint="@color/blue"
+                android:layout_marginLeft="237dp"
+                android:layout_marginStart="237dp"
+                android:src="@android:drawable/ic_delete"
+                android:layout_gravity="right" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="1"
+                android:layout_marginLeft="18dp"
+
+                android:layout_marginRight="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Role"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:id="@+id/INSIDE"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/role"
+                    android:textSize="20sp"
+                    android:textColor="#FF6B2B"
+
+                    android:layout_marginRight="2dp"
+                    android:layout_alignTop="@+id/tv_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/branchlay">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="Branch"
+                    android:id="@+id/branchtv"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:id="@+id/branch" />
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divider_basic"
+                    android:layout_marginLeft="@dimen/text_size_16"
+                    android:layout_marginRight="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/gradelay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="Grade"
+                    android:id="@+id/gradetv"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/grade"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divider_basic"
+                    android:layout_marginLeft="@dimen/text_size_16"
+                    android:layout_marginRight="@dimen/text_size_16" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/sectlay"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="Section"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/sectiontv" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/section"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divider_basic"
+                    android:layout_marginLeft="@dimen/text_size_16"
+                    android:layout_marginRight="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/sublay"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="subject"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/subjecttv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/subject"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divider_basic"
+
+                    android:layout_marginLeft="@dimen/text_size_16"
+                    android:layout_marginRight="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

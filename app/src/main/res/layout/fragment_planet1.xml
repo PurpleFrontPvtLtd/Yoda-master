@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="@string/school_name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="#FF6B2B"
+                android:textSize="16sp"
+                android:id="@+id/school_name" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="@string/name_2"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/name"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="@string/email_2"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/email"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="@string/contact_2"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/contact"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="@string/user_type_2"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/user_type"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16" />
+
+        <com.yodaapp.live.adapter.ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/role_list"
+            android:visibility="gone"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/layout3"
+            android:layout_height="wrap_content"
+            android:background="#919191"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.89"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/md_white_1000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/branches"
+                    android:id="@+id/textView20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/addbranch"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_add_circle_white_24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.yodaapp.live.adapter.ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/branch_list"
+            android:layout_gravity="center_vertical"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/layout_staff"
+            android:layout_height="wrap_content"
+            android:background="#919191"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.89"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/md_white_1000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/staff"
+                    android:id="@+id/textView11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/addstaff"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_add_circle_white_24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.yodaapp.live.adapter.ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/staff_list"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"></View>
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/layout1"
+            android:layout_height="wrap_content"
+            android:background="#919191"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                android:textSize="20sp"
+                android:textColor="@color/md_white_1000"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/admins"
+                android:id="@+id/textView9" />
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/main_admin_view_all"
+
+            android:paddingEnd="@dimen/table_row_default_padding_side"
+            android:paddingRight="@dimen/table_row_default_padding_side"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/image_margin_side"
+                android:layout_marginStart="@dimen/image_margin_side"
+                android:tint="@color/iconTint"
+                android:src="@drawable/ic_account_circle_white_24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="View All Adminstrators"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/transparent"
+                android:textColorHighlight="@color/accentLight"
+                android:textColorHint="@color/textLightGray"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="#f2f2f2"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/assign_layout"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingEnd="@dimen/table_row_default_padding_side"
+            android:paddingRight="@dimen/table_row_default_padding_side"
+            >
+
+
+
+            <TextView
+                android:id="@+id/main_assign_role_staff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Assign Staff Role"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:textColorHighlight="@color/accentLight"
+                android:textColorHint="@color/textLightGray"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/layout4"
+            android:layout_height="wrap_content"
+            android:background="#919191"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.89"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/md_white_1000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Students"
+                    android:id="@+id/textView12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.11"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/addStudent"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_add_circle_white_24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/main_student_view_all"
+
+            android:paddingEnd="@dimen/table_row_default_padding_side"
+            android:paddingRight="@dimen/table_row_default_padding_side"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/image_margin_side"
+                android:layout_marginStart="@dimen/image_margin_side"
+                android:tint="@color/iconTint"
+                android:src="@drawable/ic_account_circle_white_24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="View All Students"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/transparent"
+                android:textColorHighlight="@color/accentLight"
+                android:textColorHint="@color/textLightGray"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"></View>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/layout_subject"
+            android:layout_height="wrap_content"
+            android:background="#919191"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.89"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/md_white_1000"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/subjects"
+                    android:id="@+id/textView_subject" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/addsubject"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_add_circle_white_24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:id="@+id/main_subject_view_all"
+            android:visibility="gone"
+            android:paddingEnd="@dimen/table_row_default_padding_side"
+            android:paddingRight="@dimen/table_row_default_padding_side"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/image_margin_side"
+                android:layout_marginStart="@dimen/image_margin_side"
+                android:tint="@color/iconTint"
+                android:src="@drawable/ic_account_circle_white_24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="View All Subjects"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@android:color/transparent"
+                android:textColorHighlight="@color/accentLight"
+                android:textColorHint="@color/textLightGray"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+        <com.yodaapp.live.adapter.ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subject_list"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout"
+    android:background="@drawable/pre_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="#4D000000"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/prereg_existinguser"
+            style="@style/Button_style_blue"
+            android:layout_width="match_parent"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:text="@string/preregistration_existinguser" >
+        </Button>
+
+        <Button
+            android:id="@+id/prereg_newuser"
+            style="@style/Button_style_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:text="@string/preregistration_newuser" >
+        </Button>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

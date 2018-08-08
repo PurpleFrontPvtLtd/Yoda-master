@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" style="@style/layout" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/staff_creation_heading"
+            style="@style/TextviewStyle_space"
+            android:layout_gravity="center"
+            android:id="@+id/textView30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/name"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView31" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:hint="@string/name"
+            style="@style/EditTextviewStyle"
+            android:id="@+id/staff_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/userid"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView36" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textNoSuggestions"
+            style="@style/EditTextviewStyle"
+            android:hint="@string/userid"
+            android:id="@+id/staff_userid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/phone"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView32" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone|textNoSuggestions"
+            android:hint="@string/phone"
+            style="@style/EditTextviewStyle"
+            android:ems="10"
+            android:id="@+id/staff_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/email"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView33" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:ems="10"
+            style="@style/EditTextviewStyle"
+            android:hint="@string/email"
+            android:id="@+id/staff_email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/password"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView34" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            style="@style/EditTextviewStyle"
+            android:hint="@string/password"
+            android:id="@+id/staff_creation_password" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/confirmpassword"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView35" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            style="@style/EditTextviewStyle"
+            android:hint="@string/confirmpassword"
+            android:id="@+id/staff_creation_confirm_password" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SimpleTextviewStyle_space"
+            android:text="@string/changepassword_showpassword"
+            android:id="@+id/staff_creation_change_password"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            style="@style/Button_style2"
+            android:id="@+id/staff_creation_submit"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>

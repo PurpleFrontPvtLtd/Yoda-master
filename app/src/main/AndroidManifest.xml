@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yodaapp.live">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.yodaapp.dev.gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.yodaapp.dev.permission.C2D_MESSAGE" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.yodaapp.live.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name=".controller.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme_noactionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Staff activity defined here -->
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".PreRegistration"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Login"
+            android:theme="@style/AppTheme_noactionbar" />
+        <activity
+            android:name=".Existinguser"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Login" />
+        <activity
+            android:name=".School_creation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Create school" />
+        <activity
+            android:name=".Branch_Creation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Create branch" />
+        <activity
+            android:name=".Subject_Creation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Create Subject" />
+        <activity
+            android:name=".Staff_Creation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Create staff" />
+        <activity
+            android:name=".Branch_Detail_View"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Branch Details" />
+        <activity
+            android:name=".Grade_Creation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Create Grade" />
+        <activity
+            android:name=".Grade_Detail_View"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Grade Details" />
+        <activity
+            android:name=".Grade_Section_view"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Grade Section" />
+        <activity
+            android:name=".Section_Student_View"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Student Details" />
+        <activity
+            android:name=".Student_View_All"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="All Students" />
+        <activity
+            android:name=".Section_Student_Assign"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="All Students" />
+        <activity
+            android:name=".Section_Creation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Create Section" />
+        <activity
+            android:name=".Student_Creation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Create Student" />
+        <activity
+            android:name=".Role_Assign"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Assign Role" />
+        <activity
+            android:name=".Grade_Section_Add_Subject"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Add Subject" />
+        <activity
+            android:name=".Upload_Image"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Attach Image" />
+        <activity
+            android:name=".Staff_Details"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Staff Details" />
+        <activity
+            android:name=".Subject_Details_Home"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Subject Details" />
+        <activity
+            android:name=".School_ThankYou"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Thank You" />
+
+        <!-- Communication staff activities defined here -->
+
+        <activity
+            android:name=".Communications_Staff"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Communication" />
+        <activity
+            android:name=".Communication_Staff_Send_School"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="School Messages" />
+        <activity
+            android:name=".Communication_Staff_Branches"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Branches" />
+        <activity
+            android:name=".Communication_Staff_Grades"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Grades" />
+        <activity
+            android:name=".Communication_Staff_Branches_send"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Branch Messages" />
+        <activity
+            android:name=".Communication_Staff_Grades_Send"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Grade Messages" />
+        <activity
+            android:name=".Communication_Staff_Section"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Sections" />
+        <activity
+            android:name=".Communication_Staff_Section_Send"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Section Messages" />
+        <activity
+            android:name=".Communications_Staff_New_Message"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="New Individual Message"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".Communication_Staff_Message_Home"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Individual Communications" />
+        <activity
+            android:name=".Communication_Staff_Message_Home_Individual_Send"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Individual Message" />
+
+        <!-- Parent activities defined here -->
+
+        <activity
+            android:name=".Student_Parent_Creation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Create Parents" />
+        <activity
+            android:name=".Student_Parent_Existing_Add"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Add Existing Parents" />
+        <activity
+            android:name=".Reset_password"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Reset Password" />
+        <activity
+            android:name=".Editprofile"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Edit Profile" />
+
+        <!-- Calander activities defined here -->
+        <activity
+            android:name=".Calander_Event_Add"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Add Events" />
+        <activity
+            android:name=".Calender_Event_Details"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="View Details" />
+        <activity
+            android:name=".Calender_Event_Edit"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Edit Details" />
+
+        <!-- parent activity defined here -->
+        <activity
+            android:name=".Parent.MainActivity_Parent"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".Parent.Branch_Deatils"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Branch Head" />
+        <activity
+            android:name=".Parent.Communication_View"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="School Messages" />
+        <activity
+            android:name=".Parent.Communication_Parents_Staff_View"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Individual Communications" />
+        <activity
+            android:name=".Parent.Communication_Parents_Message_Send"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Individual Messages" />
+        <activity
+            android:name=".Parent.Communication_Parents_Individual_Send"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="New Individual Message" />
+
+        <!-- Parent Calander activities defined here -->
+        <activity
+            android:name=".Parent.Calender_Event_Details"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="View Details" />
+
+        <receiver
+            android:name=".pushnotification.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.yodaapp.gcm" />
+            </intent-filter>
+        </receiver>
+        <!-- <service android:name="com.yodaapp.dev.pushnotification.GcmIntentService" /> -->
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.yodaapp.dev.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".pushnotification.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Communications_Staff_to_Staff_New_Message" />
+        <activity
+            android:name=".Communication_toStaff_View_Messages"
+            android:label="Staff Messages" />
+        <activity
+            android:name=".Parent.Edit_Student_Details"
+            android:label="Edit Student Details" />
+        <activity
+            android:name=".Edit_Student_Details"
+            android:label="Edit Student Details" />
+        <activity android:name=".Parent.Communication_Parents_Individual_Send1" />
+        <activity
+            android:name=".MembersSelectActivity"
+            android:label="Create group" />
+        <activity
+            android:name=".MembersSelectActivity1"
+            android:label="Create group" />
+        <activity
+            android:name=".CreateGroupActivity"
+            android:label="Create group" />
+        <activity android:name=".SecondActivity" />
+        <activity
+            android:name=".GroupActivity1"
+            android:label="Communications" />
+        <activity
+            android:name=".Parent.GroupActivity1"
+            android:label="Communications" />
+        <activity
+            android:name=".MessageViewSent"
+            android:label="All Messages" />
+        <activity
+            android:name=".Parent.MessageViewSent"
+            android:label="All Messages" />
+        <activity
+            android:name=".Parent.Groupinfo"
+            android:label="Info" />
+        <activity
+            android:name=".Groupinfo"
+            android:label="Info" />
+        <activity
+            android:name=".MessageViewSentOneToOne"
+            android:label="All Messages" />
+        <activity
+            android:name=".RemoveStudent"
+            android:label="Remove Students" />
+        <activity
+            android:name=".Grade_Edit"
+            android:label="Edit Grade" />
+        <activity
+            android:name=".Parent.MembersSelectActivity"
+            android:label="Create Group" />
+        <activity android:name=".Parent.MessageViewSentOneToOne" />
+        <activity android:name=".SectionSubjectView" />
+        <activity
+            android:name=".AdminLists"
+            android:label="Administrators" />
+        <activity
+            android:name=".AssignAdminRole"
+            android:label="Add Administrator" />
+        <activity android:name=".RemoveStaffRole" android:label="Remove Administrators"></activity>
+    </application>
+
+</manifest>

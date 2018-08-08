@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    style="@style/layout2" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/layout"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space_Big"
+            android:text=""
+            android:layout_gravity="center"
+            android:id="@+id/planet_parent_school_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SimpleTextviewStyle_Mediunbig"
+            android:layout_marginBottom="20dp"
+            android:text="@string/parents_your_child2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/layout"
+            android:id="@+id/fragment_planet_parent_layout">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

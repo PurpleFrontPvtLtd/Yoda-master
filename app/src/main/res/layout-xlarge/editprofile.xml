@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    style="@style/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/vieweditprofile_heading"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vieweditprofile_name"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        <EditText
+            android:id="@+id/viewedit_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/vieweditprofile_name_hint"
+            style="@style/EditTextviewStyle"
+            android:inputType="textPersonName|textCapWords|textNoSuggestions" >
+
+            <requestFocus />
+        </EditText>
+
+
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vieweditprofile_bsname"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        <EditText
+            android:id="@+id/viewedit_bsname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:visibility="gone"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/vieweditprofile_bsname_hint"
+            android:inputType="textPersonName|textCapWords" />
+
+
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/vieweditprofile_category"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        <Spinner
+            android:id="@+id/viewedit_category_edit"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:spinnerMode="dialog"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vieweditprofile_phone"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/viewedit_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/vieweditprofile_phone"
+            style="@style/EditTextviewStyle"
+            android:inputType="phone|textNoSuggestions"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/TextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/vieweditprofile_fbpage"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        <EditText
+            android:id="@+id/viewedit_fbpage_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/textView14"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vieweditprofile_website"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+        <EditText
+            android:id="@+id/viewedit_website_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:visibility="gone"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/vieweditprofile_website_hint"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vieweditprofile_logo"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView17"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/viewedit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/email"
+            style="@style/EditTextviewStyle"
+            android:inputType="textEmailAddress|textNoSuggestions"/>
+
+        <ImageButton
+            android:id="@+id/viewedit_logoiv_edit"
+            style="@style/Button_style_tab"
+            android:layout_width="148dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:contentDescription="@string/vieweditprofile_logo_discription"
+            android:src="@drawable/ic_launcher" />
+
+        <Button
+            android:id="@+id/viewedit_update"
+            style="@style/Button_style_tab"
+            android:layout_width="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/vieweditprofile_submit"/>
+    </LinearLayout>
+</ScrollView>

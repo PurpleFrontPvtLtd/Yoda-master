@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    style="@style/layout2"
+    android:background="@color/md_white_1000"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_subject"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            style="@style/TextviewStyle_space_MediumBig"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_subject"
+            style="@style/TextviewStyle_space"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/layout_border1"
+    android:layout_height="wrap_content">
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:spinnerMode="dialog"
+            android:id="@+id/grade_section_add_subject_subject_spinner">
+        </Spinner>
+</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_teacher"
+            style="@style/TextviewStyle_space"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_border1"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:spinnerMode="dialog"
+            android:id="@+id/grade_section_add_subject_teacher_spinner"/>
+</LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:textColor="@color/md_white_1000"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:id="@+id/grade_section_add_subject_submit"
+            style="@style/Button_style2"/>
+    </LinearLayout>
+
+</ScrollView>

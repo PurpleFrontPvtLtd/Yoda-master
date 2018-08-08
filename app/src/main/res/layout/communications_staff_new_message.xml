@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    style="@style/layout2" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:layout_margin="@dimen/text_size_16"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space_Big"
+            android:text="@string/new_message"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            style="@style/SimpleTextviewStyle_22"
+            android:text="@string/student"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/communication_staff_student_spinner"
+            android:spinnerMode="dialog"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+
+            android:text="@string/parent"
+            style="@style/SimpleTextviewStyle_22"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:spinnerMode="dialog"
+            android:id="@+id/communication_staff_parent_spinner"/>
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#70bebebe"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/edittext_communication_message"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:id="@+id/communication_staff_new_message" />
+
+        <Button
+            style="@style/send_communiction_message"
+            android:id="@+id/communication_staff_new_message_submit" />
+    </LinearLayout>
+
+</LinearLayout>

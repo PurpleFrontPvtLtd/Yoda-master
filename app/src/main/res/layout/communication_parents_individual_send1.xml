@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" style="@style/layout2"
+    android:layout_width="match_parent"
+    android:background="@color/md_grey_100"
+
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="@string/individual_message"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/SimpleTextviewStyle_Mediunbig"
+        android:id="@+id/communcations_parents_individual_name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/layout2"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/communcations_parents_individual_layout">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/communcations_parents_individual_layout_linear">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mesaagelistrecycelr"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:layout_weight="0.71" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#f1f1f1"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_height="55dp"
+            android:paddingTop="1dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Enter Message"
+            android:paddingBottom="1dp"
+            android:id="@+id/communcations_parents_individual_send_message1"
+            android:layout_width="287dp"
+            android:layout_toLeftOf="@+id/communcations_parents_individual_send_message_submit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/blue"
+            android:id="@+id/communcations_parents_individual_send_mess1age_submit"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#70bebebe"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/edittext_communication_message"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:id="@+id/communcations_parents_individual_send_message" />
+
+        <Button
+            style="@style/send_communiction_message"
+            android:id="@+id/communcations_parents_individual_send_message_submit" />
+    </LinearLayout>
+
+
+</LinearLayout>

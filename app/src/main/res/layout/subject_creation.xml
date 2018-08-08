@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" style="@style/layout" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/text_size_16"
+            android:text="@string/create_subject"
+            android:id="@+id/textView28" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space"
+            android:text="@string/subject_name"
+            android:visibility="gone"
+            android:id="@+id/textView29" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subject_name"
+            style="@style/EditTextviewStyle"
+            android:id="@+id/subject_name" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textColor="@color/md_white_1000"
+            android:background="@color/blue"
+            android:id="@+id/subject_creation_submit"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>

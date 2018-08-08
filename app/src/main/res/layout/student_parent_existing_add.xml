@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_white_1000"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Existing Parents"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space_Big"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#696e79"
+
+            android:layout_height="wrap_content"
+            android:text="Select Existing parents"
+            style="@style/TextviewStyle_space"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:id="@+id/customer_layout"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/parent_existing_spinner"
+                android:entries="@array/planets_array"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#696e79"
+            android:layout_height="wrap_content"
+            android:text="Relationship"
+            style="@style/TextviewStyle_space"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:id="@+id/customer_layout2"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/student_parent_existing_relationship"
+                android:entries="@array/planets_array"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            style="@style/Button_style2"
+            android:background="@color/blue"
+            android:textColor="@color/md_white_1000"
+            android:text="@string/ok"
+            android:layout_gravity="center"
+            android:id="@+id/student_parent_existing_add_ok"/>
+
+    </LinearLayout>
+</LinearLayout>

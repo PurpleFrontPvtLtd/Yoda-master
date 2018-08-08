@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    style="@style/layout2" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text=""
+            android:id="@+id/calender_event_details_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="@string/details"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:id="@+id/calender_event_details_notes"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:background="@color/lightGray"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="@string/start_date2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text=""
+            android:id="@+id/calender_event_details_start_date"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:background="@color/lightGray"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="@string/end_date2"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text=""
+            android:id="@+id/calender_event_details_end_date"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:background="@color/lightGray"
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="School"
+            android:id="@+id/textView47" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+
+            android:textSize="18dp"
+            android:id="@+id/calender_event_details_school"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:visibility="gone"
+
+            android:background="@color/lightGray"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="Branch"
+            android:id="@+id/textView49" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text=""
+            android:id="@+id/calender_event_details_branch"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:background="@color/lightGray"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="Grade"
+            android:id="@+id/textView50" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/calender_event_details_grade"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:background="@color/lightGray"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="Section"
+            android:id="@+id/textView51" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/calender_event_details_section"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:background="@color/lightGray"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</ScrollView>

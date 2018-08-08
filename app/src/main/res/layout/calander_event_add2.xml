@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/layout2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/event_name"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView44" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/image_margin_side"
+                android:layout_marginStart="@dimen/image_margin_side"
+                android:tint="@color/iconTint"
+                android:src="@drawable/ic_assignment_white_24dp"/>
+
+            <EditText
+                android:id="@+id/calander_event__add_name"                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/text_margin_side"
+                android:layout_marginStart="@dimen/text_margin_side"
+                android:background="@android:color/transparent"
+                android:hint="@string/event_name"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColorHighlight="@color/accentLight"
+                android:textColorHint="@color/textLightGray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+            android:layout_marginStart="@dimen/line_separator_margin_side_large"
+            android:background="@color/lightGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/details"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView45" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/image_margin_side"
+                android:layout_marginStart="@dimen/image_margin_side"
+                android:tint="@color/iconTint"
+                android:src="@drawable/ic_assignment_white_24dp"/>
+
+            <EditText
+                android:id="@+id/calander_event__add_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/text_margin_side"
+                android:layout_marginStart="@dimen/text_margin_side"
+                android:background="@android:color/transparent"
+                android:hint="@string/event_detail"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColorHighlight="@color/accentLight"
+                android:textColorHint="@color/textLightGray"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_separator_height"
+            android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+            android:layout_marginStart="@dimen/line_separator_margin_side_large"
+            android:background="@color/lightGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/event_start"
+
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView46" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:drawableLeft="@drawable/black_dot"
+            android:text="@string/start_date"
+            android:id="@+id/calander_event__add_start_date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/event_end"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView48" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:drawableLeft="@drawable/black_dot"
+            android:text="@string/end_date"
+            android:id="@+id/calander_event__add_end_date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/school"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView50" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calander_event__add_school" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/branch"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView51" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calander_event__add_branch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/grade"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView52" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calander_event__add_grade" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/section"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView53" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calander_event__add_section" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            style="@style/Button_style2"
+            android:layout_marginTop="15dp"
+            android:id="@+id/calander_event__add_create"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+
+</ScrollView>

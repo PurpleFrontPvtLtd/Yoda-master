@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:weightSum="1"
+                android:layout_marginLeft="18dp"
+
+                android:layout_marginRight="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Rahul"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:id="@+id/tv_name"
+                    android:textColor="#63a6f3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_create_white_24dp"
+                    android:tint="@color/blue"
+                    android:id="@+id/edit_user"
+                    android:layout_marginRight="2dp"
+                    android:layout_alignTop="@+id/tv_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="Branch"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="#FF6B2B"
+                    android:textSize="16sp"
+                    android:id="@+id/tv_branch" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_basic"
+                android:layout_marginLeft="@dimen/text_size_16"
+                android:layout_marginRight="@dimen/text_size_16" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="Grade"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_grade"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_basic"
+                android:layout_marginLeft="@dimen/text_size_16"
+                android:layout_marginRight="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="Section"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_section"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_basic"
+                android:layout_marginLeft="@dimen/text_size_16"
+                android:layout_marginRight="@dimen/text_size_16" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="Section Teacher"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_steacher"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_basic"
+                android:layout_marginLeft="@dimen/text_size_16"
+                android:layout_marginRight="@dimen/text_size_16" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:text="Grade Teacher"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_gteacher"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_basic"
+                android:layout_marginLeft="@dimen/text_size_16"
+                android:layout_marginRight="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                android:weightSum="1"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left"
+                    android:layout_weight="0.35"
+                    android:text="Allergies"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:id="@+id/tv_allergic"
+                    android:gravity="right"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_basic"
+                android:layout_marginLeft="@dimen/text_size_16"
+                android:layout_marginRight="@dimen/text_size_16" />
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" style="@style/layout2" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/layout2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/communication_staff_royal_layout"
+        android:layout_above="@+id/linearLayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/communications"
+                style="@style/TextviewStyle_space_MediumBig"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/school_communication_messages"
+                android:layout_margin="0dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextviewStyle_space_MediumBig"
+                android:layout_margin="0dp"
+                android:visibility="gone"
+                android:id="@+id/communcations_staff_royal_school_name"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/communication_staff_royal_layout_linear">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#70bebebe"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            style="@style/edittext_communication_message"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:singleLine="false"
+            android:id="@+id/communication_staff_send_message" />
+
+        <Button
+            style="@style/send_communiction_message"
+            android:id="@+id/communication_staff_send_message_submit" />
+    </LinearLayout>
+
+</RelativeLayout>

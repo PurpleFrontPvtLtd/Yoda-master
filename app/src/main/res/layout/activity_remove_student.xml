@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yodaapp.live.RemoveStudent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.yodaapp.live.adapter.ExpandableListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+   />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_border1"
+        android:gravity="center"
+        android:onClick="removeStudents"
+        android:id="@+id/remove_student"
+        android:layout_marginTop="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_red_800"
+            android:textStyle="bold"
+
+            style="@style/SimpleTextviewStyle"
+            android:text="@string/section_student_view_remove"
+            android:id="@+id/student_inactivate"/>
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

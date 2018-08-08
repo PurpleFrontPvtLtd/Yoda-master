@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" style="@style/layout2" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:text="@string/select_students"
+            android:layout_marginTop="5dp"
+            android:id="@+id/select_tv" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/section_students_unassigned_layout"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:background="@color/blue"
+            android:textColor="@color/md_white_1000"
+            android:layout_gravity="center"
+            android:id="@+id/section_student_unassigned_submit"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</ScrollView>

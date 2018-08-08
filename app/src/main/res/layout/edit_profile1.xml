@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription"
+    android:id="@+id/create_coordinator"
+    android:background="#ffffff"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_account_circle_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/viewedit_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/vieweditprofile_name_hint"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_email_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/viewedit_website_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:hint="@string/email"
+
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/image_margin_side"
+                        android:layout_marginStart="@dimen/image_margin_side"
+                        android:tint="@color/iconTint"
+                        android:src="@drawable/ic_perm_phone_msg_white_24dp"/>
+
+                    <EditText
+                        android:id="@+id/viewedit_phone_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/text_margin_side"
+                        android:layout_marginStart="@dimen/text_margin_side"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/phone"
+                        android:singleLine="true"
+                        android:textColorHighlight="@color/accentLight"
+                        android:textColorHint="@color/textLightGray"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_separator_height"
+                    android:layout_marginLeft="@dimen/line_separator_margin_side_large"
+                    android:layout_marginStart="@dimen/line_separator_margin_side_large"
+                    android:background="@color/lightGray" />
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textColor="@color/md_white_1000"
+                    android:background="@color/blue"
+                    android:id="@+id/viewedit_update"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp" />
+
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

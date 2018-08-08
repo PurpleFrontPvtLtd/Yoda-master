@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" style="@style/layout" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/student_edit_heading"
+            style="@style/TextviewStyle_space_MediumBig"
+            android:id="@+id/textView37"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/name"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView38" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName|textNoSuggestions"
+            style="@style/EditTextviewStyle"
+            android:id="@+id/student_add_name" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/allergies"
+            android:inputType="text"
+            style="@style/EditTextviewStyle"
+            android:id="@+id/student_add_allergies" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/userid"
+            android:visibility="gone"
+            style="@style/TextviewStyle_space"
+            android:id="@+id/textView39" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            style="@style/Button_style2"
+            android:id="@+id/add_new_student_submit"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</ScrollView>

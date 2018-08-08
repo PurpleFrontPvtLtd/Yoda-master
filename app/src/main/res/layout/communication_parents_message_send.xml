@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+
+            android:text="@string/parents_new_messages_heading"/>
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffffff"
+            android:id="@+id/communication_parents_new_message_spinner"
+            android:spinnerMode="dialog"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#70bebebe"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/edittext_communication_message"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:id="@+id/communication_parents_send_message" />
+
+        <Button
+            style="@style/send_communiction_message"
+            android:id="@+id/communication_parents_send_message_submit" />
+    </LinearLayout>
+
+</LinearLayout>

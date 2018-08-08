@@ -1,0 +1,37 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ListView
+            android:id="@+id/listview_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#DCDCDC"
+            android:dividerHeight="0.10dp"
+            android:drawSelectorOnTop="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/communication_staff_home_layout"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/group_create"
+            android:layout_width="@dimen/fab_button_diameter"
+            android:layout_height="@dimen/fab_button_diameter"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:layout_marginBottom="@dimen/fab_button_margin_bottom"
+            android:layout_marginRight="@dimen/fab_button_margin_right"
+            android:background="@drawable/fab_shape"
+            android:layout_gravity="bottom"
+            android:src="@drawable/fab_ic_add"
+            android:tint="@android:color/white"/>
+
+    </RelativeLayout>
+
+    </FrameLayout>
+

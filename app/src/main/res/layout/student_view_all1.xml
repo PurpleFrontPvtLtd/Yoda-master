@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout style="@style/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </ListView>
+
+
+    <ImageButton
+        android:id="@+id/addstudentbtn"
+        android:layout_width="@dimen/fab_button_diameter"
+        android:layout_height="@dimen/fab_button_diameter"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/fab_button_margin_bottom"
+        android:layout_marginRight="@dimen/fab_button_margin_right"
+        android:background="@drawable/fab_shape"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/fab_ic_add"
+        android:tint="@android:color/white"/>
+</FrameLayout>

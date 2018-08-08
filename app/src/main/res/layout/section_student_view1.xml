@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/md_white_1000"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+
+            style="@style/TextviewStyle_space_MediumBig"
+            android:textSize="20dp"
+            android:text="@string/section_student_view_student_detail"/>
+
+
+        <ImageButton
+            android:id="@+id/section_student_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/no_image1"
+            android:background="@drawable/layout_click_gray"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/vieweditprofile_logo_discription" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="1"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginRight="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:id="@+id/section_student_name"
+                android:textColor="#63a6f3"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="Branch"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="#FF6B2B"
+                android:textSize="16sp"
+                android:id="@+id/section_student_branch" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="Grade"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/section_student_grade"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="Year"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/section_student_year"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:text="Section"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/section_student_section"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="22dp"
+            android:weightSum="1"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:layout_weight="0.35"
+                android:text="Allergies"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:id="@+id/section_student_allergies"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/divider_basic"
+            android:layout_marginRight="@dimen/text_size_16"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/md_white_1000"
+            android:id="@+id/fragment_planet_parent_layout">
+            <com.yodaapp.live.adapter.ExpandableListView
+                android:layout_width="match_parent"
+                android:divider="@color/md_grey_200"
+                android:dividerHeight="1dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1"
+            android:layout_marginLeft="18dp"
+
+            android:layout_marginRight="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+
+                android:text="@string/section_student_view_parent"                android:textStyle="bold"
+                android:textSize="19sp"
+                android:id="@+id/section_student_name1"
+                android:textColor="#ab6aaa"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_basic"
+            android:layout_marginLeft="@dimen/text_size_16"
+            android:layout_marginRight="@dimen/text_size_16" />
+        <com.yodaapp.live.adapter.ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:id="@+id/listview">
+
+        </com.yodaapp.live.adapter.ExpandableListView>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_border1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+            android:id="@+id/crtPar"
+            android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            style="@style/SimpleTextviewStyle"
+            android:text="@string/section_student_view_parient_gaurdian_create"
+            android:id="@+id/student_parient_gaurdian_create"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_border1"
+        android:gravity="center"
+        android:id="@+id/crtExt"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+
+            android:layout_height="wrap_content"
+            style="@style/SimpleTextviewStyle"
+            android:text="@string/section_student_view_parient_gaurdian"
+            android:id="@+id/student_parient_gaurdian_add"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:gravity="center"
+            android:id="@+id/crtInact"
+
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_red_800"
+                android:textStyle="bold"
+
+                style="@style/SimpleTextviewStyle"
+                android:text="@string/section_student_view_inactivate"
+                android:id="@+id/student_inactivate"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

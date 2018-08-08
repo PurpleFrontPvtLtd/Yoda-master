@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/md_grey_100"
+
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communications"
+        android:visibility="gone"
+        style="@style/TextviewStyle_space_MediumBig"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/branch_communication_message"
+        android:layout_margin="0dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextviewStyle_space_MediumBig"
+        android:layout_margin="0dp"
+        android:visibility="gone"
+        android:id="@+id/communcations_staff_branches_school_name"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/layout2"
+        android:visibility="gone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/communication_staff_branch_layout">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/communication_staff_branch_layout_linear">
+
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mesaagelistrecycelr"
+        android:layout_width="match_parent"
+        android:layout_height="279dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:layout_weight="0.71" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#70bebebe"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/edittext_communication_message"
+            android:layout_height="50dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:id="@+id/communication_staff_branch_send_message" />
+
+        <Button android:background="@color/blue"
+            style="@style/send_communiction_message"
+            android:id="@+id/communication_staff_branch_send_message_submit"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/school_name"
+                style="@style/SimpleTextviewStyle_22" />
+
+            <TextView
+                android:id="@+id/school_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SimpleTextviewStyle_22" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_2"
+                style="@style/SimpleTextviewStyle_22" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SimpleTextviewStyle_22" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_2"
+                style="@style/SimpleTextviewStyle_22" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SimpleTextviewStyle_22" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_2"
+                style="@style/SimpleTextviewStyle_22" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SimpleTextviewStyle_22" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_type_2"
+                style="@style/SimpleTextviewStyle_22" />
+
+            <TextView
+                android:id="@+id/user_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/SimpleTextviewStyle_22" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextviewStyle_space_Big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/roles" />
+
+        <LinearLayout
+            android:id="@+id/roles_user_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            style="@style/TextviewStyle_space_Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/branches" />
+
+        <LinearLayout
+            android:id="@+id/branch_address_main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/branch_creation_go"
+                style="@style/SimpleTextviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/black_dot"
+                android:padding="0dp"
+                android:text="@string/create_branch" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextviewStyle_space_Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/staff" />
+
+        <LinearLayout
+            android:id="@+id/staff_main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/staff_creation_go"
+            style="@style/SimpleTextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/black_dot"
+            android:padding="0dp"
+            android:text="@string/create_staff" />
+
+        <TextView
+            android:id="@+id/main_assign_role_staff"
+            style="@style/SimpleTextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/black_dot"
+            android:padding="0dp"
+            android:text="@string/assign_role_staff" />
+
+        <TextView
+            style="@style/TextviewStyle_space_Big"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/student" />
+
+        <TextView
+            android:id="@+id/main_student_view_all"
+            style="@style/SimpleTextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/black_dot"
+            android:padding="0dp"
+            android:text="@string/view_all_students" />
+
+        <TextView
+            style="@style/TextviewStyle_space_Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subjects" />
+
+        <LinearLayout
+            android:id="@+id/subject_main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/subject_creation_go"
+            style="@style/SimpleTextviewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/black_dot"
+            android:padding="0dp"
+            android:text="@string/create_subject" />
+
+    </LinearLayout>
+
+
+</ScrollView>

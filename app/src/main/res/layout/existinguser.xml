@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    style="@style/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/TextviewStyle_space_MediumBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/existinguser_note"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextviewStyle_space_MediumBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/existinguser_username"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/existinguser_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/EditTextviewStyle"
+        android:background="@drawable/apptheme_edit_text_holo_light"
+        android:hint="@string/existinguser_username_hint"
+        android:inputType="text|textNoSuggestions">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        style="@style/TextviewStyle_space_MediumBig"
+        android:layout_height="wrap_content"
+        android:text="@string/existinguser_password"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/existinguser_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/apptheme_edit_text_holo_light"
+        android:hint="@string/existinguser_password_hint"
+        style="@style/EditTextviewStyle"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/existinguser_checkbox"
+        android:layout_width="wrap_content"
+        android:textColor="@color/md_green_800"
+        android:textStyle="bold"
+        style="@style/TextviewStyle_space_Small"
+        android:layout_height="wrap_content"
+        android:text="@string/existinguser_showpassword" />
+
+        <Button
+            android:id="@+id/existinguser_login"
+            style="@style/Button_style_tab"
+            android:layout_width="240dp"
+            android:layout_gravity="center"
+            android:background="@color/blue"
+            android:textColor="@color/md_white_1000"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/existinguser_login" />
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="@string/existinguser_forgetpassword"
+            android:background="@color/blue"
+            android:textColor="@color/md_white_1000"
+            style="@style/Button_style_tab"
+            android:id="@+id/existinguser_forgetpassword"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

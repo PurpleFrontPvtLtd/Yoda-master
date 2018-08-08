@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/md_white_1000"
+    android:layout_width="match_parent"  android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            style="@style/TextviewStyle_space_Big"
+            android:text="@string/communication"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="7dp"
+            android:id="@+id/communication_staff_school_name"
+            style="@style/TextviewStyle_space_MediumBig"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="#f2f2f2"
+            android:gravity="center"
+            android:id="@+id/assign_layou1t"
+            android:paddingBottom="10dp"
+            android:paddingEnd="@dimen/table_row_default_padding_side"
+            android:paddingRight="@dimen/table_row_default_padding_side"
+            >
+
+
+            <TextView
+                android:id="@+id/communication_staff_messages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/messages"                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:textColorHighlight="@color/accentLight"
+                android:textColorHint="@color/textLightGray"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="#f2f2f2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/assign_layout"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingEnd="@dimen/table_row_default_padding_side"
+            android:paddingRight="@dimen/table_row_default_padding_side"
+            >
+
+
+
+            <TextView
+                android:id="@+id/communication_staff_branches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/branches"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:textColorHighlight="@color/accentLight"
+                android:textColorHint="@color/textLightGray"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/parent_messages"
+            android:layout_marginTop="40dp"
+            style="@style/TextviewStyle_space_MediumBig"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SimpleTextviewStyle"
+            android:visibility="gone"
+
+            android:drawableLeft="@drawable/black_dot"
+            android:text="@string/messages"
+            android:id="@+id/communication_staff_parent_message"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SimpleTextviewStyle"
+            android:visibility="gone"
+
+            android:drawableLeft="@drawable/black_dot"
+            android:text="@string/send_new_message"
+            android:id="@+id/communication_staff_send"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/scrollview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:text="Staff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#696e79"
+            style="@style/TextviewStyle_space_dark_blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:id="@+id/customer_layout"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/role_assign_staff"
+                android:entries="@array/planets_array"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:id="@+id/textView3"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/customer_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/TextviewStyle_space_blue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/layout_border1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/role_assign_role"
+                android:spinnerMode="dialog"
+                android:entries="@array/planets_array"
+
+                android:layout_marginRight="10dp"
+                android:popupTheme="@style/android:Widget.Holo.Light.PopupMenu"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/md_white_1000"
+            android:background="@color/blue"
+            android:id="@+id/submit"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
